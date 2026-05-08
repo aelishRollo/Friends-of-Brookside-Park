@@ -1,0 +1,203 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+local_backend: true
+
+media_folder: "content/media"
+public_folder: "/content/media"
+
+collections:
+  - label: "Site Settings"
+    name: "site_settings"
+    files:
+      - label: "Global Site Settings"
+        name: "global_site_settings"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Site Title", name: "siteTitle", widget: "string" }
+          - { label: "Site Subtitle", name: "siteSubtitle", widget: "string" }
+          - { label: "Header CTA Text", name: "headerCtaText", widget: "string" }
+          - { label: "Header CTA Link", name: "headerCtaHref", widget: "string" }
+          - { label: "Event Time Zone", name: "eventTimeZone", widget: "string", hint: "Use IANA time zone, e.g. America/Indiana/Indianapolis" }
+          - label: "Navigation Items"
+            name: "navItems"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Href", name: "href", widget: "string" }
+              - label: "Page Key"
+                name: "key"
+                widget: "select"
+                options: ["home", "about", "history", "events", "resources", "get-involved", "custom"]
+          - { label: "Footer Title", name: "footerTitle", widget: "string" }
+          - { label: "Footer Address", name: "footerAddress", widget: "string" }
+          - { label: "Footer Email", name: "footerEmail", widget: "string" }
+          - { label: "Footer Phone Raw", name: "footerPhoneRaw", widget: "string" }
+          - { label: "Footer Phone Display", name: "footerPhoneDisplay", widget: "string" }
+          - { label: "Footer Copyright", name: "footerCopyright", widget: "string" }
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/pages/home.json"
+        fields:
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Tagline", name: "heroTagline", widget: "string" }
+          - { label: "Initiatives Heading", name: "initiativesHeading", widget: "string" }
+          - { label: "Events Heading", name: "eventsHeading", widget: "string" }
+
+      - label: "About"
+        name: "about"
+        file: "content/pages/about.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+      - label: "Trail History"
+        name: "history"
+        file: "content/pages/history.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - { label: "Map Link Text", name: "mapLinkText", widget: "string" }
+          - { label: "Map Link URL", name: "mapLinkUrl", widget: "string" }
+
+      - label: "Events Page"
+        name: "events_page"
+        file: "content/pages/events.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+
+      - label: "Resources Page"
+        name: "resources_page"
+        file: "content/pages/resources.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+
+      - label: "Get Involved"
+        name: "get_involved"
+        file: "content/pages/get-involved.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Lead", name: "lead", widget: "string" }
+          - label: "Options"
+            name: "options"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" }
+
+      - label: "Custom Pages"
+        name: "custom_pages"
+        file: "content/pages/custom-pages.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Use lowercase letters, numbers, and hyphens only."] }
+              - { label: "Lead", name: "lead", widget: "string", required: false }
+              - { label: "Show In Navigation", name: "showInNav", widget: "boolean", default: false }
+              - { label: "Navigation Label", name: "navLabel", widget: "string", required: false }
+              - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+              - label: "Page Blocks"
+                name: "blocks"
+                widget: "list"
+                types:
+                  - label: "Text Section"
+                    name: "text"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string", required: false }
+                      - label: "Paragraphs"
+                        name: "paragraphs"
+                        widget: "list"
+                        field: { label: "Paragraph", name: "paragraph", widget: "text" }
+
+                  - label: "Cards Section"
+                    name: "cards"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string", required: false }
+                      - label: "Cards"
+                        name: "cards"
+                        widget: "list"
+                        fields:
+                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: "Summary", name: "summary", widget: "text" }
+                          - { label: "Link", name: "link", widget: "string", required: false }
+
+                  - label: "CTA Section"
+                    name: "cta"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string", required: false }
+                      - { label: "Body", name: "body", widget: "text", required: false }
+                      - { label: "Button Label", name: "buttonLabel", widget: "string", required: false }
+                      - { label: "Button Link", name: "buttonLink", widget: "string", required: false }
+
+  - label: "Collections"
+    name: "collections"
+    files:
+      - label: "Initiatives"
+        name: "initiatives"
+        file: "content/collections/initiatives.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt", name: "imageAlt", widget: "string" }
+
+      - label: "Events"
+        name: "events"
+        file: "content/collections/events.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Starts At", name: "startsAt", widget: "datetime" }
+              - { label: "Ends At", name: "endsAt", widget: "datetime", required: false }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "URL", name: "url", widget: "string", required: false }
+
+      - label: "Resources"
+        name: "resources"
+        file: "content/collections/resources.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "URL", name: "url", widget: "string" }

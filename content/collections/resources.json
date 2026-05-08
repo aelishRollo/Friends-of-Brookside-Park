@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "Indy Parks",
+      "category": "Parks",
+      "summary": "Official city parks information, facility updates, and permits.",
+      "url": "https://www.indy.gov/agency/department-of-parks-and-recreation"
+    },
+    {
+      "title": "Keep Indianapolis Beautiful",
+      "category": "Partner",
+      "summary": "Volunteer opportunities and environmental stewardship programs.",
+      "url": "https://www.kibi.org"
+    },
+    {
+      "title": "Indianapolis Greenways",
+      "category": "Trails",
+      "summary": "Regional trail maps and planning resources.",
+      "url": "https://www.indy.gov/activity/find-a-trail-or-greenway"
+    }
+  ]
+}

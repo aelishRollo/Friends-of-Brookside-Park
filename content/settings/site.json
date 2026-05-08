@@ -1,0 +1,45 @@
+{
+  "siteTitle": "Friends of Brookside Park",
+  "siteSubtitle": "Brookside + Spades Neighborhoods",
+  "headerCtaText": "Get Involved / Stay Connected",
+  "headerCtaHref": "get-involved.html",
+  "eventTimeZone": "America/Indiana/Indianapolis",
+  "navItems": [
+    {
+      "label": "Home",
+      "href": "index.html",
+      "key": "home"
+    },
+    {
+      "label": "About",
+      "href": "about.html",
+      "key": "about"
+    },
+    {
+      "label": "Trail History",
+      "href": "history.html",
+      "key": "history"
+    },
+    {
+      "label": "Events",
+      "href": "events.html",
+      "key": "events"
+    },
+    {
+      "label": "Resources",
+      "href": "resources.html",
+      "key": "resources"
+    },
+    {
+      "label": "Get Involved",
+      "href": "get-involved.html",
+      "key": "get-involved"
+    }
+  ],
+  "footerTitle": "Friends of Brookside Park",
+  "footerAddress": "3500 Brookside Parkway S Dr, Indianapolis, IN",
+  "footerEmail": "hello@friendsofbrooksidepark.org",
+  "footerPhoneRaw": "+13175551234",
+  "footerPhoneDisplay": "(317) 555-1234",
+  "footerCopyright": "Copyright 2026 Friends of Brookside Park"
+}

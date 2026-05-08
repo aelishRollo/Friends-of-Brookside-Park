@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "title": "Spring Creek Cleanup",
+      "startsAt": "2026-05-16T09:00:00-04:00",
+      "endsAt": "2026-05-16T11:00:00-04:00",
+      "location": "Nowland Ave Bridge",
+      "summary": "Help remove litter and invasive plants along Pogue's Run. Gloves and tools provided.",
+      "url": ""
+    },
+    {
+      "title": "Neighborhood Bike Tour",
+      "startsAt": "2026-06-06T10:00:00-04:00",
+      "endsAt": "2026-06-06T12:00:00-04:00",
+      "location": "Brookside Park Pavilion",
+      "summary": "A family-friendly ride highlighting trail connections, local history, and new improvements.",
+      "url": ""
+    },
+    {
+      "title": "Fall Volunteer Day",
+      "startsAt": "2026-10-03T09:30:00-04:00",
+      "endsAt": "2026-10-03T12:00:00-04:00",
+      "location": "Art & Nature Park Entrance",
+      "summary": "Join neighbors for habitat restoration and trail touch-ups before winter.",
+      "url": ""
+    },
+    {
+      "title": "Winter Planning Workshop",
+      "startsAt": "2025-12-13T10:00:00-05:00",
+      "endsAt": "2025-12-13T12:00:00-05:00",
+      "location": "Brookside Community Room",
+      "summary": "A planning session where volunteers shaped the 2026 stewardship calendar.",
+      "url": ""
+    }
+  ]
+}

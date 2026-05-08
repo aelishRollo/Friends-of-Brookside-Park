@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "title": "Volunteer Guide",
+      "slug": "volunteer-guide",
+      "lead": "Everything a first-time volunteer needs to know before joining an event.",
+      "showInNav": true,
+      "navLabel": "Volunteer Guide",
+      "heroImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1800&q=80",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "What to Bring",
+          "paragraphs": [
+            "Wear closed-toe shoes, bring a reusable water bottle, and dress for changing weather.",
+            "For cleanup and restoration days, we recommend long pants and work gloves if you have them."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Volunteer Roles",
+          "cards": [
+            {
+              "title": "Trail Cleanup",
+              "summary": "Litter pickup and light trimming to keep walkways accessible.",
+              "link": "events.html"
+            },
+            {
+              "title": "Habitat Support",
+              "summary": "Planting native species and removing invasive growth in priority zones.",
+              "link": "events.html"
+            },
+            {
+              "title": "Event Support",
+              "summary": "Set-up, check-in, and wayfinding assistance at community gatherings.",
+              "link": "events.html"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Ready to Join?",
+          "body": "Sign up for the next volunteer day and we will send details.",
+          "buttonLabel": "See Upcoming Events",
+          "buttonLink": "events.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "Community Engagement",
+      "summary": "Neighborhood bike tours and educational gatherings connect residents to the park corridor.",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Neighbors talking outdoors during a community event"
+    },
+    {
+      "title": "Trail Activation",
+      "summary": "Regular rides and walks improve trail visibility and build a stronger sense of safety.",
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Cyclists riding together on an urban trail"
+    },
+    {
+      "title": "Habitat Restoration",
+      "summary": "Volunteers remove litter and invasive plants to improve creek health and biodiversity.",
+      "image": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Volunteers restoring a stream habitat"
+    }
+  ]
+}

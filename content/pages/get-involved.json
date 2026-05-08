@@ -1,0 +1,21 @@
+{
+  "title": "Get Involved",
+  "lead": "Pick the way you want to help: volunteer, donate, partner, or spread the word.",
+  "options": [
+    {
+      "title": "Volunteer Days",
+      "summary": "Join monthly habitat restoration and cleanup days along the trail and creek.",
+      "link": "events.html"
+    },
+    {
+      "title": "Sponsor an Initiative",
+      "summary": "Local businesses can support equipment, events, and youth programming.",
+      "link": "resources.html"
+    },
+    {
+      "title": "Join the Mailing List",
+      "summary": "Get periodic updates on events, projects, and community wins.",
+      "link": "about.html"
+    }
+  ]
+}
